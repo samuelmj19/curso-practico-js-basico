@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geometricas </title>
+</head>
+<body>
+    <header>
+        <h1>Figuras Geométricas</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Calcula el area y Perímetro de un cuadrado</h2>
+            <form action="">
+                <p id="resultado-cuadrado"></p>
+                <label for="valor-cuadrado">Escribe el valor de los lados del Cuadrado</label>
+                <input type="number" id="valor-cuadrado">
+                <button type="button" onclick="areaCuadrado()">Calcular Área</button>
+                <button type="button" onclick="perimetroCuadrado()">Calcular Perímetro</button>
+            </form>
+        </section>
+        <section>
+            <h2>Calcula el area y perimetro de un triangulo </h2>
+            <form action="">
+                <p id="resultado-triangulo"></p>
+                <label for="valor-triangulo1">Escribe el valor del lado 1</label>
+                <input type="number" id="valor-triangulo1"><br>
+                <label for="valor-triangulo2">Escribe el valor del lado 2</label>
+                <input type="number" id="valor-triangulo2"><br>
+                <label for="valor-triangulo3">Escribe el valor de la base</label>
+                <input type="number" id="valor-triangulo3"><br>
+                <label for="valor-triangulo4">Escribe el valor de la altura</label>
+                <input type="number" id="valor-triangulo4"><br>
+                <button type="button" onclick="areaTriangulo()">Calcular Área</button>
+                <button type="button" onclick="perimetroTriangulo()">Calcular Perímetro</button>
+            </form>
+        </section>
+        <section></section>
+    </main>
+    <script src="figuras.js"></script>
+</body>
+</html>
