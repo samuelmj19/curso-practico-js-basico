@@ -34,3 +34,27 @@ function areaTriangulo(){
     let resultado = document.getElementById('resultado-triangulo')
     resultado.innerHTML = 'El Area del triangulo es: \n' + (base * altura) / 2;
 }
+
+// circulo
+
+function diametro(){
+    let valorRadio = document.getElementById('valor-radio');
+    let diametro = parseInt(valorRadio.value) * 2;
+    let resultado = document.getElementById('resultado-circulo')
+    resultado.innerHTML = 'El Area del triangulo es: \n' + diametro;
+}
+function circunferencia(){
+    let valorRadio = document.getElementById('valor-radio');
+    let diametro = parseInt(valorRadio.value) * 2;
+    // let diametro = radio * 2;
+    let PI = Math.PI;
+    let resultado = document.getElementById('resultado-circulo')
+    resultado.innerHTML = 'La Circunferencia del Circulo es: \n' + diametro * PI;
+}
+function areaCirculo(){
+    let valorRadio = document.getElementById('valor-radio');
+    let radio = parseInt(valorRadio.value);
+    let PI = Math.PI;
+    let resultado = document.getElementById('resultado-circulo')
+    resultado.innerHTML = 'El Area del Circulo es: \n' + (radio * radio) * PI;
+}
