@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount</title>
+    <link rel="stylesheet" href="discount.css">
+</head>
+<body>
+    <header>
+        <h1>Discount</h1>
+    </header>
+    <main>
+        <h3>Calculate Discount</h3>
+        <section class="calculate-section">
+            <input id="original-price" type="number" placeholder="Type the original price"><br>
+            <input  id="discount-input" type="number" placeholder="Type your Discount"><br>
+            <label for="coupons">Coupons</label>
+            <select name="Coupons" id="coupons">
+                <option value="0">No Coupon</option>
+                <option value="10">10%</option>
+                <option value="20">20%</option>
+                <option value="25">25%</option>
+            </select>
+            <button onclick="calculate()">Calculate</button>
+        </section>
+        <section class="product-card">
+            <h5>Product</h5>
+            <p class="Result-discount-percent">-0%</p>
+            <p class="product-price-old">$0</p>
+            <p class="product-price-new">$0</p>
+        </section>
+        <p class="saved"></p>
+    </main>
+    <script src="discount.js"></script>
+</body>
+</html>

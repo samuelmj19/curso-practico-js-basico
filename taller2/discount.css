@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.calculate-section{
+    width: 270px;
+    border: solid 5px #2F5DA8;
+    border-radius: 8px;
+    padding: 20px 5px;
+    text-align: center;
+}
+.calculate-section input, select{
+    background-color: #eee;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+    margin: 10px 0px;
+    padding: 0 5px;
+    box-shadow: inset 0px 2px 3px 1px #aaa;
+    width: 90%;
+}
+.calculate-section #coupons{
+    width: 71%;
+}
+.calculate-section button{
+    width: 100%;
+    color: #ddd;
+    height: 35px;
+    background-color: #2F5DA8;;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.calculate-section button:hover{
+    cursor: pointer;
+    background-color: #4180e4;
+}
+.product-card{
+    display: grid;
+    background-image: url('./img/laptop.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 270px;
+    height: 250px;
+    border: 2px solid #aaa;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 10px;
+    grid-template-areas:
+    "a b" "c d";
+}
+.product-card h5{
+    grid-area: a;
+}
+.product-card .Result-discount-percent{
+    grid-area: b;
+    justify-self: self-end;
+}
+.product-card .product-price-old{
+    align-self: end;
+    text-decoration: line-through;
+    color: #aaa;
+}
+.product-card .product-price-new{
+    place-self: end;
+}
