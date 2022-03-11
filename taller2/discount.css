@@ -45,13 +45,16 @@ main{
     cursor: pointer;
     background-color: #4180e4;
 }
+.cards-section{
+    display: flex;
+}
 .product-card{
     display: grid;
-    background-image: url('./img/laptop.jpg');
+    /* background-image: url('./img/laptop.jpg'); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 270px;
+    width: 250px;
     height: 250px;
     border: 2px solid #aaa;
     border-radius: 8px;
@@ -59,6 +62,15 @@ main{
     padding: 10px;
     grid-template-areas:
     "a b" "c d";
+}
+.card1{
+    background-image: url('./img/laptop.jpg');
+}
+.card2{
+    background-image: url('./img/phone.png');
+}
+.card3{
+    background-image: url('./img/tablet.png');
 }
 .product-card h5{
     grid-area: a;
